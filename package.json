@@ -1,0 +1,42 @@
+{
+  "name": "my-lib",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "rimraf dist && vue-tsc && vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "peerDependencies": {
+    "primeflex": "^3.3.1",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.29.2",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "rimraf": "^5.0.1",
+    "sass": "^1.63.6",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vitepress": "^0.22.4",
+    "vue-tsc": "^1.8.3"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "module": "./dist/my-lib.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/my-lib.es.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuruoyun/vue-component-lib-starter.git"
+  }
+}
