@@ -1,20 +1,20 @@
 <script setup>
-import Basic from './demo/ComponentA/Basic.vue'
+import UserSelector from './demo/UserSelector/Basic.vue'
 </script>
 
-# Component A
+# User Selector
 
-This is a simple Hello Word component with a prop and use icon <span class="icon-heart" style="color:tomato"></span> from a font file.
+Компонент с возможностью найти и добавить пользователя из выпадающего списка с проверкой валидности
 
-## Example Usage
-
-You may show demo below with the code snippet.
+## Пример использования
 
 <DemoContainer>
-  <Basic/>
+  <UserSelector/>
 </DemoContainer>
 
-<<< @/components/demo/ComponentA/Basic.vue
+<<< @/components/demo/UserSelector/Basic.vue
+
+<!--
 
 ## Reference
 
@@ -37,3 +37,5 @@ You may show props, slots, events, methods, etc. using Markdown.
 | Name | Parameters | Description |
 | ---- | ---------- | ----------- |
 |      |            |             |
+
+-->

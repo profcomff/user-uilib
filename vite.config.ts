@@ -1,19 +1,20 @@
 const path = require('path');
 const { defineConfig } = require('vite');
 import vue from '@vitejs/plugin-vue';
+import vuetify from 'vite-plugin-vuetify'
 
 module.exports = defineConfig({
-  plugins: [vue()], // to process SFC
+  plugins: [vue(), vuetify()], // to process SFC
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'my-lib',
+      name: '@profcomff/user-uilib',
       formats: ['es'], // adding 'umd' requires globals set to every external module
-      fileName: (format) => `my-lib.${format}.js`,
+      fileName: (format) => `profcomff-user-uilib.${format}.js`,
     },
     rollupOptions: {
       // external modules won't be bundled into your library
-      external: ['vue', /primevue\/.+/], // not every external has a global
+      external: ['vue', 'vuetify', 'pinia'], // not every external has a global
       output: {
         // disable warning on src/index.ts using both default and named export
         exports: 'named',

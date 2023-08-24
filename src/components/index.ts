@@ -1,7 +1,5 @@
-import ComponentA from './ComponentA.vue'
-import ComponentB from './ComponentB.vue'
+import UserSelector from './UserSelector.vue'
 
 export {
-  ComponentA,
-  ComponentB
+  UserSelector,
 }
