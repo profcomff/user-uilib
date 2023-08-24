@@ -1,5 +1,5 @@
-const path = require('path');
-const { defineConfig } = require('vite');
+import * as path from 'path';
+import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vuetify from 'vite-plugin-vuetify'
 

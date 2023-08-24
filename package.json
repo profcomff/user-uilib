@@ -1,7 +1,11 @@
 {
   "name": "@profcomff/user-uilib",
-  "version": "2023.08.24",
-  "keywords": ["profcomff", "auth", "user"],
+  "version": "2023.08.24-1",
+  "keywords": [
+    "profcomff",
+    "auth",
+    "user"
+  ],
   "scripts": {
     "build": "rimraf dist && vue-tsc && vite build",
     "docs:dev": "vitepress dev docs",

@@ -1,4 +1,4 @@
-const path = require('path')
+import * as path from 'path';
 
 module.exports = {
   title: 'Profcomff User Library',
